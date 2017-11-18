@@ -73,6 +73,8 @@ for article_link in article_links:
         dic[keywords_type_list[i].text] = li
     article_keywords.append(dic)
 
+driver.close()
+
 # already get all data, now output to the csv file
 pprint(article_keywords)
 with open("ieee_zhangbo_.csv", "w", newline="")as f:
